@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF1F1960-0D3B-4D57-8C50-29B9B849C9C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cloud_demo</RootNamespace>
+    <AssemblyName>Cloud_demo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="photo1\Logo.png" />
+    <Content Include="photo1\云笔记2.png" />
+    <Content Include="photo1\前进.ico" />
+    <Content Include="photo1\声音.ico" />
+    <Content Include="photo1\打印.ico" />
+    <Content Include="photo1\搜索.ico" />
+    <Content Include="photo1\撤销.ico" />
+    <Content Include="photo1\播放器.ico" />
+    <Content Include="photo1\未标51.png" />
+    <Content Include="photo1\网络.ico" />
+    <Content Include="photo1\菜单.ico" />
+    <Content Include="photo1\警告.ico" />
+    <Content Include="photo1\设置.ico" />
+    <Content Include="photo1\邮件.ico" />
+    <Content Include="photo1\音乐.ico" />
+    <Content Include="photo1\音乐2.ico" />
+    <Content Include="photo2\C#程序.bmp" />
+    <Content Include="photo2\下划线.bmp" />
+    <Content Include="photo2\保存.bmp" />
+    <Content Include="photo2\倾斜.bmp" />
+    <Content Include="photo2\剪切.bmp" />
+    <Content Include="photo2\加粗.bmp" />
+    <Content Include="photo2\右对齐.bmp" />
+    <Content Include="photo2\复制.bmp" />
+    <Content Include="photo2\字体.bmp" />
+    <Content Include="photo2\字体颜色.bmp" />
+    <Content Include="photo2\居中对齐.bmp" />
+    <Content Include="photo2\左对齐.bmp" />
+    <Content Include="photo2\我的简历.bmp" />
+    <Content Include="photo2\打印.bmp" />
+    <Content Include="photo2\打印预览.bmp" />
+    <Content Include="photo2\打开.bmp" />
+    <Content Include="photo2\撤销.bmp" />
+    <Content Include="photo2\新建.bmp" />
+    <Content Include="photo2\粘贴.bmp" />
+    <Content Include="photo2\红色.bmp" />
+    <Content Include="photo2\绿色.bmp" />
+    <Content Include="photo2\自动保存.bmp" />
+    <Content Include="photo2\蓝色.bmp" />
+    <Content Include="photo2\软件说明.bmp" />
+    <Content Include="photo2\退出.bmp" />
+    <Content Include="photo2\颜色.bmp" />
+    <Content Include="photo3\下载.ico" />
+    <Content Include="photo3\关闭.ico" />
+    <Content Include="photo3\关闭3.ico" />
+    <Content Include="photo3\删除.ico" />
+    <Content Include="photo3\声音.ico" />
+    <Content Include="photo3\复制.ico" />
+    <Content Include="photo3\帮助.ico" />
+    <Content Include="photo3\拓展.ico" />
+    <Content Include="photo3\撤销.ico" />
+    <Content Include="photo3\放大.ico" />
+    <Content Include="photo3\新建1.ico" />
+    <Content Include="photo3\新建2.ico" />
+    <Content Include="photo3\新建3.ico" />
+    <Content Include="photo3\新建4.ico" />
+    <Content Include="photo3\显示键盘.ico" />
+    <Content Include="photo3\照片.ico" />
+    <Content Include="photo3\粘贴.ico" />
+    <Content Include="photo3\警告.ico" />
+    <Content Include="photo3\设置.ico" />
+    <Content Include="photo3\通讯录.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
